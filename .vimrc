@@ -9,7 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Bundle 'VundleVim/Vundle.vim'
 "Bundle 'beyondwords/vim-twig'
-
+Bundle 'kien/ctrlp.vim'
 "Bundle 'Shougo/unite.vim'
 "Bundle 'm2mdas/phpcomplete-extended'
 Bundle 'jistr/vim-nerdtree-tabs'
@@ -22,18 +22,22 @@ Bundle 'NLKNguyen/papercolor-theme'
 Bundle 'edkolev/tmuxline.vim'
 Bundle 'pearofducks/ansible-vim'
 "Bundle 'taglist.vim'
+Bundle 'wincent/command-t'
+Bundle 'FuzzyFinder'
 Bundle 'majutsushi/tagbar'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'pangloss/vim-javascript'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Syntastic'
+Bundle 'matchit.zip'
 Bundle 'TaskList.vim'
 Bundle 'ap/vim-css-color'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
 Bundle 'scrooloose/nerdcommenter'
 "Bundle 'm2mdas/phpcomplete-extended'
-
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-surround'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 "
@@ -105,7 +109,7 @@ set laststatus=2
 map <c-l> :tabn<cr>
 map <c-p> :tabp<cr>
 nmap <F8> :TagbarToggle<CR>
-
+nmap <F5> :NERDTreeToggle<CR>
 "n 'beyondwords/vim-twig'
 "map <c-n> :tabnew<cr>
 "=========================================
