@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/media/WEBSITE/dwc.local/sportstat/src/PermissionBundle/EventListener'
+let g:netrw_dirhist_2='/media/WEBSITE/dwc.local/sportstat/src/PermissionBundle'
+let g:netrw_dirhist_3='/media/WEBSITE/dwc.local/sportstat/src/PermissionBundle/Controller'
+let g:netrw_dirhist_4='/media/WEBSITE/dwc.local/equipment'
+let g:netrw_dirhist_5='/media/WEBSITE/dwc.local/equipment/web/js/equipment/equipment'
+let g:netrw_dirhist_6='/media/WEBSITE/server-configs'
