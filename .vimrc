@@ -23,14 +23,14 @@ Bundle 'edkolev/tmuxline.vim'
 Bundle 'pearofducks/ansible-vim'
 "Bundle 'taglist.vim'
 Bundle 'wincent/command-t'
-Bundle 'FuzzyFinder'
+"Bundle 'FuzzyFinder'
 Bundle 'majutsushi/tagbar'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'pangloss/vim-javascript'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Syntastic'
 Bundle 'matchit.zip'
-Bundle 'TaskList.vim'
+"Bundle 'TaskList.vim'
 Bundle 'ap/vim-css-color'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Shougo/unite.vim'
@@ -106,8 +106,8 @@ set laststatus=2
 
 " MAPPING SHORTCUT KEY
 " =======================================
-map <c-l> :tabn<cr>
-map <c-p> :tabp<cr>
+"map <c-l> :tabn<cr>
+"map <c-p> :tabp<cr>
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :NERDTreeToggle<CR>
 "n 'beyondwords/vim-twig'
