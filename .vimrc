@@ -44,7 +44,7 @@ call vundle#end()            " required
 " ======================================
 " THEME CONFIGURATIONS
 " ======================================
-colorscheme blackboard 
+colorscheme 3dglasses 
 " set t_Co=256
 " ======================================
 " END THEME CONFIGRATIONS
