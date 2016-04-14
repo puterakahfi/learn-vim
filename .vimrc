@@ -116,7 +116,7 @@ nmap <F5> :NERDTreeToggle<CR>
 " END MAPPING
 
 " NERD TREE AUTO ACTIVE
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " Sudo command
 cmap w!! w !sudo tee > /dev/null %<CR>
 "To ignore plugin indent changes, instead use:
