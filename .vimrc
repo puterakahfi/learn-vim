@@ -1,4 +1,3 @@
-
 " VUNDLE
 " =============================================================
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -10,8 +9,6 @@ call vundle#begin()
 Bundle 'VundleVim/Vundle.vim'
 "Bundle 'beyondwords/vim-twig'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'Shougo/unite.vim'
-"Bundle 'm2mdas/phpcomplete-extended'
 Bundle 'jistr/vim-nerdtree-tabs'
 "Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'scrooloose/syntastic'
@@ -33,11 +30,12 @@ Bundle 'matchit.zip'
 "Bundle 'TaskList.vim'
 Bundle 'ap/vim-css-color'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Shougo/unite.vim'
+Bundle 'shougo/vimproc.vim'
+Bundle 'shougo/unite.vim'
 Bundle 'scrooloose/nerdcommenter'
-"Bundle 'm2mdas/phpcomplete-extended'
 Bundle 'ervandew/supertab'
 Bundle 'tpope/vim-surround'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 "
