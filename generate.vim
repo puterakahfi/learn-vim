@@ -33,8 +33,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "*****************************************************************************
 "" NeoBundle install packages
 "*****************************************************************************
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'tpope/vim-commentary'
@@ -52,13 +50,14 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle "Yggdroot/indentLine"
 NeoBundle 'Shougo/vimproc.vim', {
-      \ 'build' : {
-      \     'windows' : 'tools\\update-dll-mingw',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
+			\ 'build' : {
+			\     'windows' : 'tools\\update-dll-mingw',
+			\     'cygwin' : 'make -f make_cygwin.mak',
+			\     'mac' : 'make',
+			\     'linux' : 'make',
+			\     'unix' : 'gmake',
+			\    },
+			\ }
 
 "" Vim-Session
 NeoBundle 'xolox/vim-misc'
@@ -78,6 +77,7 @@ NeoBundle 'honza/vim-snippets'
 
 "" Color
 NeoBundle 'tomasr/molokai'
+NeoBundle 'flazz/vim-colorschemes'
 
 "" Vim-Bootstrap Updater by sherzberg
 NeoBundle 'avelino/vim-bootstrap-updater'
@@ -117,11 +117,6 @@ NeoBundleCheck
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-"" Colorcheme setting
-
-syntax enable
-set background=dark
-colorscheme solarized
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -172,8 +167,7 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finsh_neobundle')
-  colorscheme solarized
-  set background=dark
+  colorscheme molokai
 endif
 
 set mousemodel=popup
@@ -185,10 +179,10 @@ if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
     set transparency=7
- endif
+  endif
 else
   let g:CSApprox_loaded = 1
-  set background=dark
+
 
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
