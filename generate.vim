@@ -33,6 +33,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "*****************************************************************************
 "" NeoBundle install packages
 "*****************************************************************************
+NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'tpope/vim-commentary'
@@ -115,6 +116,11 @@ NeoBundleCheck
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
+"" Colorcheme setting
+
+syntax enable
+set background=dark
+colorscheme solarized
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -165,7 +171,8 @@ set number
 
 let no_buffers_menu=1
 if !exists('g:not_finsh_neobundle')
-  colorscheme molokai
+  colorscheme solarized
+  set background=dark
 endif
 
 set mousemodel=popup
@@ -177,10 +184,10 @@ if has("gui_running")
   if has("gui_mac") || has("gui_macvim")
     set guifont=Menlo:h12
     set transparency=7
-  endif
+ endif
 else
   let g:CSApprox_loaded = 1
-
+  set background=dark
 
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
