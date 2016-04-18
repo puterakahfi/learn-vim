@@ -34,6 +34,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "" NeoBundle install packages
 "*****************************************************************************
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'tpope/vim-commentary'
