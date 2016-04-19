@@ -164,12 +164,17 @@ let g:session_command_aliases = 1
 syntax on
 set ruler
 set number
-
 let no_buffers_menu=1
+
 if !exists('g:not_finsh_neobundle')
-  colorscheme molokai
+  	colorscheme solarized 
 endif
 
+set background=dark
+" solarized options 
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+colorscheme solarized
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
