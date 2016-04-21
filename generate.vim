@@ -95,6 +95,8 @@ NeoBundle 'mattn/emmet-vim'
 
 "" PHP Bundle
 NeoBundle 'arnaud-lb/vim-php-namespace'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'm2mdas/phpcomplete-extended'
 
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
