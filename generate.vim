@@ -355,6 +355,9 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 "" Opens a tab edit command with the path of the currently edited file filled
 noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
+"" Save file
+noremap <leader>sf :w<CR>
+
 "" ctrlp.vim
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
@@ -457,7 +460,8 @@ augroup vimrc-javascript
   autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab softtabstop=4 smartindent
 augroup END
 
-
+" PHP autocomplete
+autocmd  FileType  php  omnifunc=phpcomplete_extended#CompletePHP
 
 "" Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
