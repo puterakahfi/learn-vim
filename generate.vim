@@ -127,7 +127,13 @@ set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
+
 set expandtab
+
+
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+
 
 "" Map leader to ,
 let mapleader=','
@@ -169,14 +175,14 @@ set number
 let no_buffers_menu=1
 
 if !exists('g:not_finsh_neobundle')
-  	colorscheme solarized 
+  	colorscheme  carrot 
 endif
 
 set background=dark
 " solarized options 
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
+colorscheme  carrot
 set mousemodel=popup
 set t_Co=256
 set guioptions=egmrti
@@ -503,3 +509,10 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+" python highlight all
+let python_highlight_all = 1
+
+
+" show the matching part of the pair for [] {} and ()
+set showmatch
