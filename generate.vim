@@ -74,7 +74,6 @@ if v:version >= 704
 endif
 
 NeoBundle 'honza/vim-snippets'
-
 "" Color
 NeoBundle 'tomasr/molokai'
 NeoBundle 'flazz/vim-colorschemes'
