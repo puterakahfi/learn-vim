@@ -96,6 +96,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'arnaud-lb/vim-php-namespace'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'm2mdas/phpcomplete-extended'
+NeoBundle 'adoy/vim-php-refactoring-toolbox'
 
 "" Include user's extra bundle
 if filereadable(expand("~/.vimrc.local.bundles"))
